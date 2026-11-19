@@ -1,0 +1,5 @@
+# Linux fix for duplex mismatch
+sudo ethtool -s eth0 autoneg on speed 100 duplex full
+
+# Windows PowerShell
+Set-NetAdapter -Name 'Ethernet' -Speed 100Mbps -DuplexMode Full
